@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.7.7/Tone.js"></script>
+</head>
+
+<body>
+    <script>
+        //create a synth and connect it to the master output (your speakers)
+        var synth = new Tone.Synth().toMaster()
+
+        //play a middle 'C' for the duration of an 8th note
+        synth.triggerAttackRelease('C4', '1n')
+        synth.triggerAttackRelease('D4', '1n')
+        synth.triggerAttackRelease('E4', '1n')
+        synth.triggerAttackRelease('F4', '1n')
+        synth.triggerAttackRelease('G4', '1n')
+        synth.triggerAttackRelease('A4', '1n')
+
+        Tone.start()
+    </script>
+</body>
+
+</html>
